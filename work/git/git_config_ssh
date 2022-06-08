@@ -1,0 +1,68 @@
+jack@ubuntu18_server:~$ git config --global user.name "jack"
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$ git config --global user.email "1064371200@qq.com"
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$ git config --list
+user.name=jack
+user.email=1064371200@qq.com
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$ vimdiff
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$ git config --global merge.tool vimdiff
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$ git config --list
+user.name=jack
+user.email=1064371200@qq.com
+merge.tool=vimdiff
+jack@ubuntu18_server:~$ cat .gitconfig
+[user]
+        name = jack
+        email = 1064371200@qq.com
+[merge]
+        tool = vimdiff
+jack@ubuntu18_server:~$ ls
+ch340  docker  esp  esp_who  frp  git  js76x8  minicom.log  mjpg  mnt  MobaXterm_installer.dat  mqtt  mygit  nrf5  org_76x8  python  work  zigbee_thread
+jack@ubuntu18_server:~$ ssh-keygen -t rsa -C "1064371200@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/jack/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/jack/.ssh/id_rsa.
+Your public key has been saved in /home/jack/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:h3Lcu3Jvk7Rraz31mpZ6q1p5x8jO4BBYU3iXGOJ1/iA 1064371200@qq.com
+The key's randomart image is:
++---[RSA 2048]----+
+|          ..+o.. |
+|         ..+ooo  |
+|          +.E.o  |
+|       . = . . o |
+|      . S +     .|
+|       o . o.o o.|
+|          o.+++o+|
+|        . .=B=*o.|
+|         oo*BO*+ |
++----[SHA256]-----+
+jack@ubuntu18_server:~$ cat .ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDK+J/g5WawLTBGpD1TrrCn/7Al35tNOBgqFegRkPpNWpLbxrfZCDAomSFxVdBRFlWIbxJEHwgUcY34umPtN5kG8aEmOXcD8DBAQMHiM9RkvGd57Fpwu335PD6tgJr9mARWQg5z4p7rXOpY78DTnsYm4CLEAYl/6v6lkoSAXPuripjWEPfPIQ4GY6ESkublasCITmP9clnrPdimWSnAPHxZlMWG2t52X7lKN5A6daFN5EaIWhzOLFFTnW0ysbbwF1KnsBahUNNJdnWsJh/rDq4KVP+Ha5RaOJAB7fJRorz2jvrO9uamW1m2+sob+0S7GWDuQzifMPsI9e08p31C8nyl 1064371200@qq.com
+jack@ubuntu18_server:~$ su
+Password:
+root@ubuntu18_server:/home/jack# cat /root/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgkmOHSzHLl51LKyXJlNMYkpZqsEUjkW4sBqdQONKZMuijVlk4PoDU3T7+es6dK9eaqVECmhfBJLpuw7duQintMzjCyJNTEfxrmrJKh4oXKoFznQ0SRZop5k2J/gMAKBDhP/5l1tL6lkIUHJrlN8ZZyaigeeealsDc6+3ipr9WqIXsbwjr0e8F6eSRcKRaR/wTI8OdwOHFl2CvAmJlghX1XGx1YyQ5xg20K4sQd2F0k/uS7T/+Ng5JsPYhrYzXW6BI6AgYRTFOT4xbKNbQHn5RuutlXvlBdfTGqTmxXUeEVkoH7YKFgVfgde/FpbubCxx5m8ZVenkXWpzTDmdrwmr/ 1064371200@qq.com
+root@ubuntu18_server:/home/jack# exit
+exit
+jack@ubuntu18_server:~$ ls
+ch340  docker  esp  esp_who  frp  git  js76x8  minicom.log  mjpg  mnt  MobaXterm_installer.dat  mqtt  mygit  nrf5  org_76x8  python  work  zigbee_thread
+jack@ubuntu18_server:~$ cat .ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDK+J/g5WawLTBGpD1TrrCn/7Al35tNOBgqFegRkPpNWpLbxrfZCDAomSFxVdBRFlWIbxJEHwgUcY34umPtN5kG8aEmOXcD8DBAQMHiM9RkvGd57Fpwu335PD6tgJr9mARWQg5z4p7rXOpY78DTnsYm4CLEAYl/6v6lkoSAXPuripjWEPfPIQ4GY6ESkublasCITmP9clnrPdimWSnAPHxZlMWG2t52X7lKN5A6daFN5EaIWhzOLFFTnW0ysbbwF1KnsBahUNNJdnWsJh/rDq4KVP+Ha5RaOJAB7fJRorz2jvrO9uamW1m2+sob+0S7GWDuQzifMPsI9e08p31C8nyl 1064371200@qq.com
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$ ls
+ch340  docker  esp  esp_who  frp  git  js76x8  minicom.log  mjpg  mnt  MobaXterm_installer.dat  mqtt  mygit  nrf5  org_76x8  python  work  zigbee_thread
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$
+jack@ubuntu18_server:~$ cd mygit/
+jack@ubuntu18_server:~/mygit$ ls
+jack@ubuntu18_server:~/mygit$ git clone git@github.com:15051735684/first_rep.git
+
